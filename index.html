@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaurav-Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,600&display=swap"
+    rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #7395ae;
+      color: black;
+      font-family: "Poppins", sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgb(66, 65, 64);
+      height: 60px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0px 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    nav ul li a:hover {
+      color: rgb(243, 235, 235);
+      font-size: 1.05rem;
+    }
+
+    .left {
+      font-size: large;
+      font-weight: bold;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      margin: 23px 0;
+      align-items: center;
+    }
+
+    .firstsection div {
+      width: 35%;
+    }
+
+    .leftsection {
+      margin: 50px 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    #name {
+      color: blue;
+    }
+
+    .rightsection img {
+      width: 70%;
+      /* margin: 30px 0; */
+    }
+
+    #elemen {
+      color: blue;
+    }
+
+    #element {
+      color: blue;
+    }
+
+    .secondsection {
+      max-width: 86vw;
+      margin: auto;
+    }
+
+    .secondsection h1 {
+      padding-top: 15px;
+      font-weight: bolder;
+    }
+
+    .color {
+      color: rgb(78, 2, 2);
+      font-size: larger;
+      font-weight: bold;
+      width: 50%;
+    }
+
+    #red {
+      border-color: red;
+    }
+    .box{
+      background-color: rgb(32, 19, 19);
+      width: 80vw;
+      height: 1.5px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Gaurav's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li> <a href="#"> Home </a></li>
+          <li> <a href="aboutus.html">About Me </a></li>
+          <li> <a href="#">Service </a></li>
+          <li> <a href="#">My Project </a></li>
+          <li> <a href="#"> Contact Me </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi, I am <span id="name">Gaurav Bimali</span> <br>
+        I am BCA 4th Sem student. <br>
+        I am <span id="elemen"></span> <br>
+        My programming skill include <span id="element"></span> <br>
+
+      </div>
+      <div class="rightsection">
+        <img src="web.png" alt="" />
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#elemen', {
+      strings: ['<i>Frontend</i> Developer.'],
+      typeSpeed: 80,
+    });
+  </script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Java</i>', ' C.', ' DSA.'],
+      typeSpeed: 80,
+    });
+  </script>
+
+  <section class="secondsection">
+    <marquee direction="right" class="color">What have i done so far?</marquee>
+    <hr id="red">
+    <h1 id="past">Work Experience</h1>
+    <div class="box"></div>
+  </section>
+</body>
+
+</html>
